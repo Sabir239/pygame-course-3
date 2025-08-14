@@ -6,7 +6,7 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 title =pygame.display.set_caption('uncunu')  # تم تصحيح هذا السطر
 
-# Import image for the soul and caje
+# Import image for the caje
 caje = pygame.image.load('Caja.png')
 
 # Text font and size
@@ -15,7 +15,7 @@ text_font = pygame.font.Font('pixel-comic-sans-undertale-sans-font.otf', 50)
 # Create text
 text_surface = text_font.render('start', False, (255, 255, 255))
 
-# Basic animation
+# import image of the soul and his Basic animation
 soul = pygame.image.load('souls.png')
 souls_x_pos = 600
 soul = pygame.transform.scale(soul, (60, 30))
@@ -40,4 +40,5 @@ while True:
 
     pygame.display.update()
     clock.tick(60)
+
 
