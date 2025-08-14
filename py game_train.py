@@ -6,7 +6,7 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 title =pygame.display.set_caption('uncunu')  # تم تصحيح هذا السطر
 
-# Import image for the soul
+# Import image for the soul and caje
 caje = pygame.image.load('Caja.png')
 
 # Text font and size
@@ -40,3 +40,4 @@ while True:
 
     pygame.display.update()
     clock.tick(60)
+
