@@ -22,7 +22,7 @@ soul = pygame.transform.scale(soul, (60, 30))
 
 # Colors
 black = (0, 0, 0)
-
+# import this for do the fps
 clock = pygame.time.Clock()
 
 while True:
@@ -34,11 +34,13 @@ while True:
     screen.fill(black)  # تنضيف الشاشة كل فريم
     screen.blit(caje, (100, 350))
     screen.blit(text_surface, (90, 80))
-
+    #soul move 0.5 
     souls_x_pos += 0.5
+    #draw the soul in position and move it 
     screen.blit(soul, (souls_x_pos, 300))
 
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(60)#60 fps
+
 
 
